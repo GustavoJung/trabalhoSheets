@@ -28,11 +28,17 @@ public class Homepage {
 	@Produces(MediaType.TEXT_HTML)
 	public String homepage() {
 		return "<html><title>Trabalho</title>"
-				+ "<body>"
-				+ "<h1>"
+				+ "<body><br>"
+				+ "<h1>Get"
+				+ " </h1>"
 				+ "Selecione a coluna inicial e a linha que deseja buscar (Ex.: A1, B2, C3)"
 				+ "<input type=\"text\" id=\"inicial\" name=\"inicial\"><br><br>"
-				+ " </h1>"
+				+ "Selecione a coluna final e a linha que deseja buscar (Ex.: D1, E2, F3)"
+				+ "<input type=\"text\" id=\"inicial\" name=\"inicial\"><br><br>"
+				+ "<a href=\"http://localhost:8080/HelloREST/teste/selecao{inicio}{fim}>\r\n"
+				+ "   <button>Visit Google</button>\r\n"
+				+ "</a>\r\n"
+				+ ""
 				+ "<body></html>";
 	}
 }
